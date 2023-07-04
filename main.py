@@ -61,7 +61,7 @@ def sendData(device, variable, value):
 connect()
 tempSensor = dht.DHT11(machine.Pin(27))     # DHT11 Constructor 
 
-# The code within the while loop would be executed repeatedly due to the condition being set as ture
+# The code within the while loop would be executed repeatedly due to the condition being set as true
 while True:
     tempSensor.measure()
     temperature = tempSensor.temperature()
